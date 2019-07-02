@@ -1,11 +1,37 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+
 .main {
-    background-color: red;
-    color: white;
+    
     font-family: Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 50%;
-    margin-bottom: 50%;
-    font-size: 11rem;
+    letter-spacing: -5px;
 
+}
 
+.picture {
+    width: 50%;
+    align-self: center
+}
+
+.bio-answer {
+    font-family: 'futura-pt-light', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 2rem;
+    color: black;
+}
+
+.bio-box {
+    display: flex;
+    height: 50%;
+    
 }
