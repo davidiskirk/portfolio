@@ -2,16 +2,19 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-    }
+}
 
 
 .main {
-    
+
     font-family: Helvetica, sans-serif;
     letter-spacing: -5px;
 
@@ -19,7 +22,8 @@ html {
 
 .picture {
     width: 50%;
-    align-self: center
+
+    margin: auto;
 }
 
 .bio-answer {
@@ -28,10 +32,34 @@ html {
     font-size: 24px;
     line-height: 2rem;
     color: black;
+    padding-right: 4em;
+    padding-left: 4em;
 }
 
 .bio-box {
     display: flex;
     height: 50%;
-    
+
+}
+
+@media only screen and (max-width: 700px) {
+    .bio-box {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .picture {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bio-answer {
+        display: block;
+        margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
