@@ -1,27 +1,37 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-    <script src="{% static 'build/bundle.js' %}"></script>
 
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+  <script src="{% static 'build/bundle.js' %}"></script>
+
+  <title>Document</title>
 </head>
+
 <body>
-        <nav class="pa3 pa4-ns main">
-                <a class="link dim black  f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">david kirk</a>
-                <div class="tc pb3">
-                  <a class="link dim gray f2   " href="#" title="Contact">Contact</a>
-                </div>
-              </nav>
-              <div class="bio-box">
-              <img src="{% static '/img/David Kirk Headshot (Cohort 4).jpg' %}" class="picture" />
-              <p class="bio-answer pr5 pl5">David is a Jr web developer based out of Durham NC, he started his journey in coding in February 2019 and is a recent graduate of Momentum learning, a immersive bootcamp style course where he studied HTML, CSS, Javascript, Python, Django and PostGRES. Previously he worked at whole foods for five years and before that cooked in several restaurants around the state. He is a avid digital musician and husband whos favorite pastime is hanging out with his wife and two dogs. </p>
-              </div>
-   
+  <nav class="pa3 pa4-ns main">
+    <a class="link dim black  f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">david kirk</a>
+    <div class="tc pb3">
+      <a class="link dim gray f2   " href="#" title="Contact">Contact</a>
+    </div>
+  </nav>
+  <div class="bio-box">
+    <img src="{% static '/img/David Kirk Headshot (Cohort 4).jpg' %}" class="picture" />
+    <p class="bio-answer pr5 pl5">Hello world! My name is David Kirk, I am a Junior Web Developer looking to make an
+      impact at a company dedicated to making the world a better place. I am a recent graduate of Momentum Learning out
+      of Durham NC where I learned Python, Django, Javascript, CSS, HTML, SQL, PostGresSQL and git. When I am not
+      feverishly applying to jobs and working on my personal projects you can find me in Durham hanging out with my wife
+      and our two puppers. I am also anavid digital musician and cook. Im big on creating really interesting and fun
+      things wether its a song, a meal or responsive web apps! </p>
+  </div>
+
+
+
 </body>
+
 </html>
