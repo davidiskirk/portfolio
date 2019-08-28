@@ -9,17 +9,19 @@
   <link rel="stylesheet" href="{% static '/css/styles.css' %}">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
   <script src="{% static 'build/bundle.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+    integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ee21c205cb.js"></script>
 
-  <title>David S Kirk II</title>
+  <title class=>David S Kirk II</title>
 </head>
 
-<body>
-  <nav class="pa3 pa4-ns main">
-    <a class="link  black  f1 f-headline-ns tc db mb3 mb4-ns" href="#" title="Home">david kirk</a>
-    <div class="tc pb3">
+<body class="body">
+  <nav class=" pa4-ns">
+    <text class="link  black main   mb3  text-image name" href="#" title="Home">David Kirk </text>
+    <div class=" pb3">
 
-      <a class="link dim gray mr4  f2" href="mailto:david.is.kirk@gmail.com?subject = HeyDavid!&body = Message"
+      <a class="link dim gray mr4 ml1  f2" href="mailto:david.is.kirk@gmail.com?subject = HeyDavid!&body = Message"
         title="contact"><i class="fas fa-envelope"></i>
       </a>
       <a class="link dim gray mr4  f2" href="https://www.linkedin.com/in/david-kirk-developer/" title="contact">
@@ -28,20 +30,55 @@
       <a class="link dim gray f2" href="https://github.com/davidiskirk" title="contact">
         <i class="fab fa-github-square"></i>
       </a>
+      <text class="link dim gray ml4  f1 text-image2"> resume </text>
+      <hr />
     </div>
   </nav>
-  <div class="bio-box">
-    <img src="{% static '/img/David Kirk Headshot (Cohort 4).jpg' %}" class="picture" />
-    <p class="bio-answer ">Hello world! My name is David Kirk. I am a Junior Web Developer looking to make an
-      impact at a company dedicated to making the world a better place. I am a recent graduate of Momentum Learning out
-      of Durham NC where I learned Python, Django, Javascript, CSS, HTML, SQL, PostGresSQL and git. When I am not
-      feverishly applying to jobs and working on my personal projects you can find me in Durham hanging out with my wife
-      and our two puppers. I am also an avid digital musician and cook. Im big on creating really interesting and fun
-      things whether its a song, a meal or responsive web apps! </p>
+
+  <div class="parent">
+
+
+    <div class="div1   ">
+      <img src="{% static "/img/David Kirk Headshot (Cohort 4).jpg" %}" class="picture" />
+
+
+    </div>
+
+
+
+    <div class="div2">
+      <div class="bio"> About Me </div>
+      <div class="bio-answer"> Hello world! My name is David Kirk. I am a Web Developer looking to make an impact
+        at a
+        company dedicated to making the world a better place. I am a recent graduate of Momentum Learning out of Durham
+        NC. <br>When I am not feverishly
+        applying to jobs and working on personal projects, you can find me in Durham hanging out with my wife and our
+        two dogs </div>
+    </div>
+
+
+
+
+
+
+    <div class="div3">
+
+    </div>
+
+    <div class="div4">
+
+    </div>
+
+
   </div>
 
 
 
+
+
+
+  <footer class=" footer">
+  </footer>
 </body>
 
 </html>
