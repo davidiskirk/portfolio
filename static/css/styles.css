@@ -71,6 +71,15 @@ html {
 
 .body {
     font-family: Helvetica, sans-serif;
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all 2s ease-out;
+
+}
+
+.body.fade-in {
+    opacity: 1;
+    transform: translateY(0)
 }
 
 
@@ -145,16 +154,7 @@ html {
 
 }
 
-.project {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all .5s ease-out;
-}
 
-.project.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 .text-image {
@@ -164,7 +164,6 @@ html {
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 
@@ -176,6 +175,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -3px;
+    margin-left: .5em;
 }
 
 .name {
@@ -198,6 +198,13 @@ html {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+
+
+}
+
+.parent.fade-in {
+    opacity: 1;
+    transform: translateY(0)
 }
 
 @media only screen and (max-width: 700px) {
