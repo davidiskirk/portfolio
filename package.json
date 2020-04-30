@@ -10,7 +10,7 @@
     "build": "browserify static/js/main.js -o static/build/bundle.js"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "scrollmagic": "^2.0.7"
   }
 }
